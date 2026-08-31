@@ -9,10 +9,11 @@ class Book
     void input(int bookNum) {
         cout<<"Enter BookId for Book "<<bookNum<<":"<<'\n';
         cin>>bookid;
+        cin.ignore()
         cout<<"Enter Book Title for Book "<<bookNum<<":"<<'\n';
-        cin>>title;
+        getline(cin,title);
         cout<<"Enter Author of the Book for Book "<<bookNum<<":"<<'\n';
-        cin>>author;
+        getline(cin,author);
         cout<<"Enter the price of Book for Book "<<bookNum<<":"<<'\n';
         cin>>price;
     }
